@@ -1,0 +1,29 @@
+.card {
+    background-color: var(--color-white);
+    display: flex;  
+    flex-direction: column;
+    gap: 1rem; 
+    border-radius: 0.5rem;
+}
+
+.card-body {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem; 
+}
+
+.card-options {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.card-price {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.card-price-discount {
+    color: var(--color-red);
+}
