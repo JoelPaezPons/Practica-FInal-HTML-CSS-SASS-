@@ -46,7 +46,7 @@ En este archivo llamamos a la carpeta `02-tools` para utilizar nuestro conversor
 * **Vista Ordenador:** Pantallas mayores de 1200px.
 * **Vista Tablet:** Pantallas menores de 1200px hasta 768px.
 * **Vista Móvil:** Pantallas menores de 768px.
-  
+  k
 ### 2️⃣ `_colores.scss`
 Centralizamos la paleta de colores del proyecto utilizando variables nativas de CSS dentro de `:root`. Esto nos permite cambiar cualquier color de la web desde un solo lugar.
 ``css
