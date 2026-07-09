@@ -1,2 +1,10 @@
-CARPETA ASSETS
-Images: En esta carpeta se guardaran las imagenes que tenga la pagina como son en este caso la foto de la moto, la foto del fuego cuando hay una moto rebajada y la bicicleta de arriba que es el logo
+# 🏍️ Catálogo de Motos - Arquitectura CSS (Atomic Design)
+
+Estructura del Proyecto y Carpetas
+
+Assets/images
+En esta carpeta se encuentran todas las imagenes que se utilizaran en la pagina
+`moto.jpg`: Imagen principal del producto.
+`fuego.png`: Icono que marcara a las motos que esten rebajadas.
+`Logo.png`:   Logo de la pagina que estara arriba en el header
+
