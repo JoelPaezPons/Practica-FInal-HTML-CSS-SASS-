@@ -1,0 +1,24 @@
+@use '../03-tokens/' as tokens;
+
+.btn {
+    display: inline-flex;
+    font-family: var(--font-family-base);
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.btn-filter {
+    background-color: var(--color-low-grey);
+    color: var(--color-black);
+    padding: 0.5rem;
+    font-size: var(--font-size-sm);
+}
+
+.btn-configuration {
+    background-color: var(--color-black);
+    color: var(--color-white);
+    font-size: var(--font-size-base);
+    padding: 0.5rem;
+    width: 100%;
+}
