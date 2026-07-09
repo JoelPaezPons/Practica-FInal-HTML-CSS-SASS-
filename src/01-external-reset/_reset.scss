@@ -1,0 +1,42 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+img, picture, video, svg{
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+p a {
+    display: inline;
+}
+
+button {
+    background-color: transparent;
+    border: none;
+    font: inherit;
+    cursor: pointer;
+}
+
+input {
+    border: 1px solid;
+    font: inherit;
+}
+
+li, ul, ol {
+    list-style: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-size: inherit;
+    font-weight: inherit;
+}
