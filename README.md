@@ -37,4 +37,29 @@ También tenemos otro archivo llamado `_index.scss` con el cual podremos utiliza
 
 Para ello, he utilizado `@forward 'functions';`. Decidí hacerlo de esta manera ya que el antiguo `@import` está obsoleto y usar `@forward` es la mejor manera de conectar los módulos en Sass actualmente.
 
+#📂 src/03-tokens/
+Los Tokens son las unidades de diseño más pequeñas de nuestra web como son el caso de los colores, las fuentes y los breakpoints.
+Esta carpeta se compone de 4 archivos:
+### 1️⃣ `_breakpoints.scss`
+En este archivo llamamos a la carpeta `02-tools` para utilizar nuestro conversor. Definimos los puntos de nuestras vistas (`$break-768` y `$break-1200`):
+* **Vista Ordenador:** Pantallas mayores de 1200px.
+* **Vista Tablet:** Pantallas menores de 1200px hasta 768px.
+* **Vista Móvil:** Pantallas menores de 768px.
+  
+### 2️⃣ `_colores.scss`
+Centralizamos la paleta de colores del proyecto utilizando variables nativas de CSS dentro de `:root`. Esto nos permite cambiar cualquier color de la web desde un solo lugar.
+``css
+:root {
+    --color-white: #fff;
+    --color-low-grey: #f5f5f5;
+    --color-grey: #bfbfbf;
+    --color-strong-grey: #535151;
+    --color-black: #242221;
+    --color-red: #e00000;
+}
+### 3️⃣ _fuentes.scss
+Definimos la tipografía oficial, los pesos (font-weight) y la escala de tamaños de letra. Para mantener la web accesible pasamos todos los píxeles por nuestra función de conversión usando la sintaxis de interpolación de Sass (#{}):
+
+4️⃣ _index.scss
+Como en las carpetas anteriores, este archivo actúa como el punto de acceso central. Utiliza @forward para exponer todos los archivos anteriores (breakpoints, colores, fuentes) hacia el exterior, permitiendo que los que las demas carpetas puedan utilizar sus varibles.
 
