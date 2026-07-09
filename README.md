@@ -23,3 +23,18 @@ Formularios y Botones (`button`, `input`): Elimina los bordes y fondos grises pa
 Listas (`ul`, `ol`, `li`): Eliminamos los puntos y la numeraciones.
 
 Títulos (`h1` a `h6`): Les quitamos sus tamaños por defecto y la negrita (`font-size: inherit`) dejandonos a nosotros mas adelante elegir sus tamaños.
+
+#📂 src/02-tools/
+En esta carpeta se almacenan las funciones personalizadas de Sass. En nuestro caso, contiene una funcion para transformar píxeles a unidades `rem`
+
+Para lograrlo, primero activamos el módulo nativo `@use "sass:math";` y asi poder hacer operaciones sin utilizar `/` ya que esta obsoleta.
+Creamos la función `conversion($pixels)` que realiza los siguientes pasos:
+1. Elimina la unidad de píxeles dividiendo el parámetro entre `1px`.
+2. Divide el número resultante entre `16` (es el predeterminado en los navegadores).
+3. Lo multiplica por `1rem` para devolver el valor convertido automáticamente.
+
+También tenemos otro archivo llamado `_index.scss` con el cual podremos utilizar la función que hemos creado fuera de esa carpeta. 
+
+Para ello, he utilizado `@forward 'functions';`. Decidí hacerlo de esta manera ya que el antiguo `@import` está obsoleto y usar `@forward` es la mejor manera de conectar los módulos en Sass actualmente.
+
+
