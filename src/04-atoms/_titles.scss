@@ -1,0 +1,15 @@
+@use '../03-tokens/';
+
+.title {
+    justify-content: start;
+    font-weight: var(--font-weight-bold);
+    line-height: 1.2;
+}
+
+.title-page {
+    font-size: var(--font-size-xl);
+}
+
+.title-card {
+    font-size: var(--font-size-lg);
+}
