@@ -37,7 +37,7 @@ También tenemos otro archivo llamado `_index.scss` con el cual podremos utiliza
 
 Para ello, he utilizado `@forward 'functions';`. Decidí hacerlo de esta manera ya que el antiguo `@import` está obsoleto y usar `@forward` es la mejor manera de conectar los módulos en Sass actualmente.
 
-#📂 src/03-tokens/
+##📂 `src/03-tokens/`
 Los Tokens son las unidades de diseño más pequeñas de nuestra web como son el caso de los colores, las fuentes y los breakpoints.
 Esta carpeta se compone de 4 archivos:
 ### 1️⃣ `_breakpoints.scss`
