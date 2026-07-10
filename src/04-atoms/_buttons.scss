@@ -8,6 +8,12 @@
     gap: 0.5rem;
 }
 
+.btn--header {
+    background-color: var(--color-black);
+    color: var(--color-white);
+    padding: 0.5rem 1rem;
+}
+
 .btn-filter {
     background-color: var(--color-low-grey);
     color: var(--color-black);
@@ -22,3 +28,4 @@
     padding: 0.5rem;
     width: 100%;
 }
+
