@@ -1,0 +1,38 @@
+@use '../03-tokens/' as tokens;
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    background-color: var(--color-grey);
+}
+
+.header__logo {
+    width: 4rem;
+}
+
+.header__actions {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.header__user {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+
+.header__menu {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.header__menu-bar {
+    width: 22px;
+    height: 2px;
+    background-color: var(--color-black);
+}
