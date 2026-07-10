@@ -1,0 +1,32 @@
+@use '../03-tokens/' as tokens;
+
+.page-layout {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.distribution {
+    // Vista Movil
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0.5rem;
+
+    // Vista Tables
+    @media (min-width: tokens.$break-768){
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    // Vista Ordenador
+    @media (min-width: tokens.$break-1200){
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
