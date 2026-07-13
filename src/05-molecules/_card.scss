@@ -25,5 +25,23 @@
 }
 
 .card-price-discount {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
     color: var(--color-red);
+}
+
+.card-price-icon {
+    width: 0.875rem;
+}
+
+.card-link {
+    color: blue;
+    font-size: var(--font-size-sm);
+    text-decoration: underline;
+}
+
+.card-image {
+    width: 100%;
+    display: block;
 }
