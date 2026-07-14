@@ -15,6 +15,20 @@
     padding-inline: 3rem;
 }
 
+.catalog-header {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding-top: 3rem;
+    padding-bottom: 2rem;
+    
+}
+
+.filters {
+    display: flex;
+    gap: 1rem;
+}
+
 .distribution {
     // Vista Movil
     display: grid;
