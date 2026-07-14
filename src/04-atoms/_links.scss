@@ -1,0 +1,8 @@
+@use '../03-tokens/' as tokens;
+
+.link-text {
+    color: var(--color-blue);
+    font-size: var(--font-size-sm);
+    text-decoration: underline;
+
+}
