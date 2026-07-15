@@ -9,7 +9,7 @@
 }
 
 .header__logo {
-    width: 4rem;
+    width: var(--icon-size-lg);
 }
 
 .header__actions {
@@ -32,7 +32,7 @@
 }
 
 .header__menu-bar {
-    width: 22px;
-    height: 2px;
+    width: var(--icon-size-base);
+    height: var(--icon-size-xs);
     background-color: var(--color-black);
 }
