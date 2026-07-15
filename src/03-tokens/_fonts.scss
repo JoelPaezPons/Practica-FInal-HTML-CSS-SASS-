@@ -1,11 +1,12 @@
 @use '../02-tools/functions' as tools;
 
 :root {
-    --font-family-base: Arial, Helvetica, sans-serif;
+    --font-family-base: Arial;
 
 
-    --font-size-xl: #{tools.conversion(32px)};
-    --font-size-lg: #{tools.conversion(25px)};
+    --font-size-xl: #{tools.conversion(38px)};
+    --font-size-lg: #{tools.conversion(28px)};
+    --font-size-lm: #{tools.conversion(24px)};
     --font-size-base: #{tools.conversion(16px)};
     --font-size-sm: #{tools.conversion(14px)};
     --font-size-xs: #{tools.conversion(12px)};
