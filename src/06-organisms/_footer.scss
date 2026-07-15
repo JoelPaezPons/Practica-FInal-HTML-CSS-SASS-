@@ -1,3 +1,4 @@
+@use '../02-tools/functions' as tools;
 
 .footer {
     background-color: var(--color-low-grey);
@@ -5,8 +6,8 @@
 }
 
 .footer__links {
-    padding: 2rem;
+    padding: #{tools.conversion(32px)};
     display: flex;
     justify-content: center;
-    gap: 1rem;
+    gap: #{tools.conversion(16px)};
 }

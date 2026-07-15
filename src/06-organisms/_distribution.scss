@@ -1,3 +1,4 @@
+@use '../02-tools/functions' as tools;
 @use '../03-tokens/' as tokens;
 
 .page-layout {
@@ -12,28 +13,28 @@
     display: flex;
     flex-direction: column;
     flex-grow: 1;
-    padding-inline: 3rem;
+    padding-inline: #{tools.conversion(48px)};
 }
 
 .catalog-header {
     display: flex;
     flex-direction: column;
-    gap: 1.5rem;
-    padding-top: 3rem;
-    padding-bottom: 2rem;
+    gap: #{tools.conversion(24px)};
+    padding-top: #{tools.conversion(48px)};
+    padding-bottom: #{tools.conversion(32px)};
     
 }
 
 .filters {
     display: flex;
-    gap: 1rem;
+    gap: #{tools.conversion(16px)};
 }
 
 .distribution {
     // Vista Movil
     display: grid;
     grid-template-columns: 1fr;
-    gap: 0.5rem;
+    gap: #{tools.conversion(8px)};
 
     // Vista Tables
     @media (min-width: tokens.$break-768){

@@ -1,34 +1,41 @@
+@use '../02-tools/functions' as tools;
 @use '../03-tokens/' as tokens;
+
 
 .header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 1rem;
+    padding: #{tools.conversion(16px)};
     background-color: var(--color-low-grey);
 }
 
 .header__logo {
-    width: var(--icon-size-lg);
+    width: #{tools.conversion(70px)};
 }
 
 .header__actions {
     display: flex;
     align-items: center;
-    gap: 2rem;
+    gap: #{tools.conversion(32px)};
 }
 
 .header__user {
     display: flex;
     align-items: center;
-    gap: 1rem;
+    gap: #{tools.conversion(16px)};
+}
+
+.header__user-icon {
+    width: var(--icon-size-md);
+    height: var(--icon-size-md);
 }
 
 
 .header__menu {
     display: flex;
     flex-direction: column;
-    gap: 5px;
+    gap: #{tools.conversion(5px)};
 }
 
 .header__menu-bar {

@@ -1,7 +1,6 @@
 @use '../03-tokens/' as tokens;
 
 .title {
-    justify-content: start;
     font-weight: var(--font-weight-bold);
     line-height: 1.2;
 }
