@@ -7,8 +7,10 @@ En esta carpeta se encuentran todas las imagenes que se utilizaran en la pagina
 `moto.jpg`: Imagen principal del producto.
 `fuego.png`: Icono que marcara a las motos que esten rebajadas.
 `Logo.png`:   Logo de la pagina que estara arriba en el header
+`User.png`:   Icono de usuario que aparece en el header
 
 #📂 src/01-external-reset/
+---
 En esta carpeta se incluye el archivo que reinicia los estilos por defecto. Su función principal es eliminar los estilos por defecto que tienen los navegadores y asi garantizar que se vera de la misma manera en todos.
 
 En el reset aplican:
@@ -25,6 +27,7 @@ Listas (`ul`, `ol`, `li`): Eliminamos los puntos y la numeraciones.
 Títulos (`h1` a `h6`): Les quitamos sus tamaños por defecto y la negrita (`font-size: inherit`) dejandonos a nosotros mas adelante elegir sus tamaños.
 
 #📂 src/02-tools/
+---
 En esta carpeta se almacenan las funciones personalizadas de Sass. En nuestro caso, contiene una funcion para transformar píxeles a unidades `rem`
 
 Para lograrlo, primero activamos el módulo nativo `@use "sass:math";` y asi poder hacer operaciones sin utilizar `/` ya que esta obsoleta.
@@ -46,8 +49,8 @@ En este archivo llamamos a la carpeta `02-tools` para utilizar nuestro conversor
 * **Vista Ordenador:** Pantallas mayores de 1200px.
 * **Vista Tablet:** Pantallas menores de 1200px hasta 768px.
 * **Vista Móvil:** Pantallas menores de 768px.
-  k
-### 2️⃣ `_colores.scss`
+
+### 2️⃣ `_colors.scss`
 Centralizamos la paleta de colores del proyecto utilizando variables nativas de CSS dentro de `:root`. Esto nos permite cambiar cualquier color de la web desde un solo lugar.
 ``css
 :root {
@@ -57,10 +60,34 @@ Centralizamos la paleta de colores del proyecto utilizando variables nativas de 
     --color-strong-grey: #535151;
     --color-black: #242221;
     --color-red: #e00000;
+    --color-blue: #1E24BD;
 }
-### 3️⃣ _fuentes.scss
+### 3️⃣ _fonts.scss
 Definimos la tipografía oficial, los pesos (font-weight) y la escala de tamaños de letra. Para mantener la web accesible pasamos todos los píxeles por nuestra función de conversión usando la sintaxis de interpolación de Sass (#{}):
 
-4️⃣ _index.scss
+###4️⃣ _icons.scss
+
+Definimos aquí una escala de tamaños pensada específicamente para iconos (--icon-size-xs hasta --icon-size-lg). La separamos de _fonts.scss porque, aunque técnicamente también son medidas, no son tipografía, y mezclarlas hacía más difícil encontrar cada cosa. Antes de crear este archivo, teníamos los tamaños de cada icono escritos a mano en cada componente (header, cards...), lo que significaba tener que ir cambiándolos uno a uno si queríamos ajustar un tamaño. Con esta variable centralizada, cambiamos un solo valor y se actualiza en todos los sitios donde se usa esa escala.
+
+###5️⃣ _index.scss
 Como en las carpetas anteriores, este archivo actúa como el punto de acceso central. Utiliza @forward para exponer todos los archivos anteriores (breakpoints, colores, fuentes) hacia el exterior, permitiendo que los que las demas carpetas puedan utilizar sus varibles.
 
+## 📂 src/04-atoms/
+---
+Los atoms son los componentes más pequeños y genéricos del proyecto: no dependen de ningún contexto concreto, son como piezas sueltas que se reutilizan en cualquier sitio
+
+.btn define los estilos base compartidos por todos los botones (flex, tipografía, gap). A partir de ahí, cada variante añade lo suyo:
+
+  .btn--header: El botón oscuro que se usa tanto en "Ver todas las motos" del header como en "Suscríbete" del newsletter.
+  .btn-filter: Los botones de filtro del catálogo, con un estado adicional .btn-filter.is-active para marcar visualmente cuáles están seleccionados.
+  .btn-configuration: El botón de acción dentro de cada card.
+
+
+
+
+
+
+
+
+
+  
