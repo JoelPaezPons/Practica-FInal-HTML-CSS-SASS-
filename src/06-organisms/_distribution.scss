@@ -13,7 +13,7 @@
     display: flex;
     flex-direction: column;
     flex-grow: 1;
-    padding-inline: #{tools.conversion(48px)};
+    padding-inline: #{tools.conversion(32px)};
 }
 
 .catalog-header {
@@ -34,7 +34,8 @@
     // Vista Movil
     display: grid;
     grid-template-columns: 1fr;
-    gap: #{tools.conversion(8px)};
+    gap: #{tools.conversion(32px)};
+    padding-bottom: #{tools.conversion(64px)};
 
     // Vista Tables
     @media (min-width: tokens.$break-768){
