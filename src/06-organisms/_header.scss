@@ -6,24 +6,24 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: #{tools.conversion(16px)};
+    padding: #{tools.px-to-rem(16px)};
     background-color: var(--color-low-grey);
 }
 
 .header__logo {
-    width: #{tools.conversion(70px)};
+    width: #{tools.px-to-rem(70px)};
 }
 
 .header__actions {
     display: flex;
     align-items: center;
-    gap: #{tools.conversion(32px)};
+    gap: #{tools.px-to-rem(32px)};
 }
 
 .header__user {
     display: flex;
     align-items: center;
-    gap: #{tools.conversion(16px)};
+    gap: #{tools.px-to-rem(16px)};
 }
 
 .header__user-icon {
@@ -35,7 +35,7 @@
 .header__menu {
     display: flex;
     flex-direction: column;
-    gap: #{tools.conversion(5px)};
+    gap: #{tools.px-to-rem(5px)};
 }
 
 .header__menu-bar {

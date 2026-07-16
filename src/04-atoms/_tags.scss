@@ -3,8 +3,8 @@
 .tag {
     display: inline-flex;
     border: 1px solid var(--color-low-grey);
-    border-radius: #{tools.conversion(8px)};
-    padding: #{tools.conversion(4px)} #{tools.conversion(12px)};
+    border-radius: #{tools.px-to-rem(8px)};
+    padding: #{tools.px-to-rem(4px)} #{tools.px-to-rem(12px)};
     color: var(--color-strong-grey);
     background-color: var(--color-low-grey);
 }

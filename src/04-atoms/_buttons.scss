@@ -3,26 +3,25 @@
 
 .btn {
     display: inline-flex;
-    font-family: var(--font-family-base);
     align-items: center;
     justify-content: center;
-    gap: #{tools.conversion(8px)};
+    gap: #{tools.px-to-rem(8px)};
 }
 
 .btn--header {
     background-color: var(--color-black);
     color: var(--color-white);
-    padding: #{tools.conversion(14px)} #{tools.conversion(16px)};
+    padding: #{tools.px-to-rem(14px)} #{tools.px-to-rem(16px)};
 }
 
 
 .btn-filter {
     background-color: var(--color-white);
     color: var(--color-black);
-    padding: #{tools.conversion(8px)} #{tools.conversion(16px)};
+    padding: #{tools.px-to-rem(8px)} #{tools.px-to-rem(16px)};
     font-size: var(--font-size-sm);
-    border: 1px solid var(--color-grey);
-    border-radius: #{tools.conversion(8px)};
+    border: 1px solid var(--color-black);
+    border-radius: #{tools.px-to-rem(4px)};
 }
 
 .btn-filter.is-active {
@@ -34,7 +33,7 @@
     background-color: var(--color-black);
     color: var(--color-white);
     font-size: var(--font-size-base);
-    padding: #{tools.conversion(8px)};
+    padding: #{tools.px-to-rem(8px)};
     width: 100%;
 }
 

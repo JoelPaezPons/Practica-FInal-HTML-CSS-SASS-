@@ -1,5 +1,5 @@
 @use "sass:math";
 
-@function conversion ($pixels){
+@function px-to-rem ($pixels){
     @return math.div(math.div($pixels , 1px), 16) * 1rem;
 }

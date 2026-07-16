@@ -1,4 +1,4 @@
-@use '../02-tools/index' as tools;
+@use '../02-tools/functions' as tools;
 
-$break-768: tools.conversion(768px);
-$break-1200: tools.conversion(1200px);
+$break-768: tools.px-to-rem(768px);
+$break-1200: tools.px-to-rem(1200px);

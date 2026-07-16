@@ -4,12 +4,12 @@
     --font-family-base: Arial;
 
 
-    --font-size-xl: #{tools.conversion(38px)};
-    --font-size-lg: #{tools.conversion(28px)};
-    --font-size-lm: #{tools.conversion(24px)};
-    --font-size-base: #{tools.conversion(16px)};
-    --font-size-sm: #{tools.conversion(14px)};
-    --font-size-xs: #{tools.conversion(12px)};
+    --font-size-xl: #{tools.px-to-rem(38px)};
+    --font-size-lg: #{tools.px-to-rem(28px)};
+    --font-size-lm: #{tools.px-to-rem(24px)};
+    --font-size-base: #{tools.px-to-rem(16px)};
+    --font-size-sm: #{tools.px-to-rem(14px)};
+    --font-size-xs: #{tools.px-to-rem(12px)};
 
     // Pesos de la fuente (Font Weights)
     --font-weight-normal: 400;

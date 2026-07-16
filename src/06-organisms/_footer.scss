@@ -6,8 +6,8 @@
 }
 
 .footer__links {
-    padding: #{tools.conversion(32px)};
+    padding: #{tools.px-to-rem(32px)};
     display: flex;
     justify-content: center;
-    gap: #{tools.conversion(16px)};
+    gap: #{tools.px-to-rem(16px)};
 }

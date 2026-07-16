@@ -4,19 +4,19 @@
     background-color: var(--color-white);
     display: flex;  
     flex-direction: column;
-    gap:  #{tools.conversion(16px)}; 
-    border-radius:  #{tools.conversion(8px)}; 
+    gap:  #{tools.px-to-rem(16px)}; 
+    border-radius:  #{tools.px-to-rem(8px)}; 
 }
 
 .card-body {
     display: flex;
     flex-direction: column;
-    gap: #{tools.conversion(16px)};  
+    gap: #{tools.px-to-rem(16px)};  
 }
 
 .card-options {
     display: flex;
-    gap: #{tools.conversion(8px)}; 
+    gap: #{tools.px-to-rem(8px)}; 
 }
 
 .card-price {
@@ -28,7 +28,7 @@
 .card-price-discount {
     display: flex;
     align-items: center;
-    gap: #{tools.conversion(16px)}; 
+    gap: #{tools.px-to-rem(16px)}; 
     color: var(--color-red);
 }
 
