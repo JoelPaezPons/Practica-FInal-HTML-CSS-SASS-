@@ -43,3 +43,12 @@
     height: var(--icon-size-xs);
     background-color: var(--color-black);
 }
+
+.header__cta,
+.header__user {
+    display: none;
+
+    @media (min-width: tokens.$break-768) {
+        display: flex;
+    }
+}
