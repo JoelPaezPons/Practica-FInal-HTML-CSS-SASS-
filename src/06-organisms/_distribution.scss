@@ -26,8 +26,13 @@
 }
 
 .filters {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     gap: #{tools.conversion(16px)};
+    
+    @media (min-width: tokens.$break-768) {
+        display: flex;
+    }
 }
 
 .distribution {
