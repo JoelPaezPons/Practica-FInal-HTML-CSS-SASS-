@@ -52,9 +52,10 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 :root {
-  --font-family-base: Arial, Helvetica, sans-serif;
-  --font-size-xl: 2rem;
-  --font-size-lg: 1.5625rem;
+  --font-family-base: Arial;
+  --font-size-xl: 2.375rem;
+  --font-size-lg: 1.75rem;
+  --font-size-lm: 1.5rem;
   --font-size-base: 1rem;
   --font-size-sm: 0.875rem;
   --font-size-xs: 0.75rem;
@@ -81,7 +82,7 @@ h1, h2, h3, h4, h5, h6 {
 .btn--header {
   background-color: var(--color-black);
   color: var(--color-white);
-  padding: 0.5rem 1rem;
+  padding: 0.875rem 1rem;
 }
 
 .btn-filter {
@@ -123,6 +124,10 @@ h1, h2, h3, h4, h5, h6 {
   font-size: var(--font-size-lg);
 }
 
+.title-card {
+  font-size: var(--font-size-lm);
+}
+
 .text-card {
   font-size: var(--font-size-base);
 }
@@ -144,7 +149,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .input {
   border: 1px solid var(--color-grey);
-  padding: 0.5rem 0.75rem;
+  padding: 0.75rem;
   font-size: var(--font-size-sm);
 }
 
@@ -201,7 +206,7 @@ h1, h2, h3, h4, h5, h6 {
   display: flex;
   flex-direction: column;
   flex-grow: 1;
-  padding-inline: 3rem;
+  padding-inline: 2rem;
 }
 
 .catalog-header {
@@ -220,7 +225,8 @@ h1, h2, h3, h4, h5, h6 {
 .distribution {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 0.5rem;
+  gap: 2rem;
+  padding-bottom: 4rem;
 }
 @media (min-width: 48rem) {
   .distribution {
@@ -298,6 +304,11 @@ h1, h2, h3, h4, h5, h6 {
 .form {
   display: flex;
   flex-direction: column;
+  gap: 0.5rem;
+}
+
+.form__field {
+  display: flex;
   gap: 0.5rem;
 }
 
