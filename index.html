@@ -20,7 +20,7 @@
                 <p>Usuario</p>
             </div>
 
-            <button class="btn header__menu">
+            <button class="btn header__menu" aria-label="Abrir menú">
                 <span class="header__menu-bar"></span>
                 <span class="header__menu-bar"></span>
                 <span class="header__menu-bar"></span>
@@ -41,7 +41,7 @@
                 <button class="btn-filter">Diesel</button>
             </div>
 
-            <p class="title title-page-subtitle">8 resultados de motos eléctrica automática</p>
+            <h2 class="title title-page-subtitle">8 resultados de motos eléctrica automática</h2>
 
         </section>
 
@@ -50,7 +50,7 @@
                 <img src="assets/images/moto.jpg" alt="Imagen del producto (Moto)" class="images-responsive card-image">
 
                 <div class="card-body">
-                    <h2 class="title-page-subtitle">Moto</h2>
+                    <h2 class="title-card">Moto</h2>
 
                     <div class="card-options">
                         <span class="tag">Eléctrica</span>
@@ -73,7 +73,7 @@
                 <img src="assets/images/moto.jpg" alt="Imagen del producto (Moto)" class="images-responsive card-image">
 
                 <div class="card-body">
-                    <h2 class="title-page-subtitle">Moto</h2>
+                    <h2 class="title-card">Moto</h2>
 
                     <div class="card-options">
                         <span class="tag">Eléctrica</span>
@@ -95,7 +95,7 @@
                 <img src="assets/images/moto.jpg" alt="Imagen del producto (Moto)" class="images-responsive card-image">
 
                 <div class="card-body">
-                    <h2 class="title-page-subtitle">Moto</h2>
+                    <h2 class="title-card">Moto</h2>
 
                     <div class="card-options">
                         <span class="tag">Eléctrica</span>
@@ -117,7 +117,7 @@
                 <img src="assets/images/moto.jpg" alt="Imagen del producto (Moto)" class="images-responsive card-image">
 
                 <div class="card-body">
-                    <h2 class="title-page-subtitle">Moto</h2>
+                    <h2 class="title-card">Moto</h2>
 
                     <div class="card-options">
                         <span class="tag">Eléctrica</span>
@@ -139,7 +139,7 @@
                 <img src="assets/images/moto.jpg" alt="Imagen del producto (Moto)" class="images-responsive card-image">
 
                 <div class="card-body">
-                    <h2 class="title-page-subtitle">Moto</h2>
+                    <h2 class="title-card">Moto</h2>
 
                     <div class="card-options">
                         <span class="tag">Eléctrica</span>
@@ -161,7 +161,7 @@
                 <img src="assets/images/moto.jpg" alt="Imagen del producto (Moto)" class="images-responsive card-image">
 
                 <div class="card-body">
-                    <h2 class="title-page-subtitle">Moto</h2>
+                    <h2 class="title-card">Moto</h2>
 
                     <div class="card-options">
                         <span class="tag">Eléctrica</span>
@@ -184,10 +184,13 @@
 
     <section class="subscription">
         <h2 class="title title-page-subtitle">¿Quieres estar informado de las novedades?</h2>
-        <form>
-            <label for="email" class="form">Email</label>
-            <input type="email" id="email" placeholder="nombre@gmail.com" class="input">
-            <button type="submit" class="btn--header">Suscríbete</button>
+        <form class="form">
+            <label for="email">Email</label>
+
+            <div class="form__field">
+                <input type="email" id="email" placeholder="nombre@gmail.com" class="input">
+                <button type="submit" class="btn--header">Suscríbete</button>
+            </div>
         </form>
     </section>
 
