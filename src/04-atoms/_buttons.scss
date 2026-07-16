@@ -23,11 +23,11 @@
     font-size: var(--font-size-sm);
     border: 1px solid var(--color-grey);
     border-radius: #{tools.conversion(8px)};
+}
 
-    &.is-active{
-        background-color: var(--color-black);
-        color: var(--color-white);
-    }
+.btn-filter.is-active {
+    background-color: var(--color-black);
+    color: var(--color-white);
 }
 
 .btn-configuration {
