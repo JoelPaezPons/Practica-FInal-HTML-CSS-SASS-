@@ -1,11 +1,9 @@
 @use '../02-tools/functions' as tools;
 
 .card {
-    background-color: var(--color-white);
     display: flex;  
     flex-direction: column;
-    gap:  #{tools.px-to-rem(16px)}; 
-    border-radius:  #{tools.px-to-rem(8px)}; 
+    gap: #{tools.px-to-rem(16px)}; 
 }
 
 .card-body {
@@ -40,4 +38,5 @@
 .card-image {
     width: 100%;
     display: block;
+    border-radius: #{tools.px-to-rem(4px)};
 }
