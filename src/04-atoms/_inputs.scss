@@ -3,7 +3,7 @@
 .input {
     border: 1px solid var(--color-grey); 
     padding: #{tools.px-to-rem(12px)};
-    font-size: var(--font-size-sm);
+    font-size: var(--font-size-14);
     flex-grow: 1;
     min-height: #{tools.px-to-rem(48px)};
     border-radius: #{tools.px-to-rem(4px)};
