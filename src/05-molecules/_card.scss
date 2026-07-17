@@ -30,9 +30,18 @@
     color: var(--color-red);
 }
 
+.card-price-iva {
+    font-size: var(--font-size-sm);
+}
+
+.card-price-vat {
+    font-size: var(--font-size-sm);
+}
+
 .card-price-icon {
     width: var(--icon-size-sm);
     height: var(--icon-size-sm);
+    font-size: var(--font-size-base);
 }
 
 .card-image {
