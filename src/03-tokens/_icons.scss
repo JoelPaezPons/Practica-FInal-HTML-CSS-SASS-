@@ -1,5 +1,6 @@
 @use '../02-tools/functions' as tools;
-:root {
+
+@mixin icons {
     
     --icon-size-2: #{tools.px-to-rem(2px)};
     --icon-size-14: #{tools.px-to-rem(14px)};
@@ -7,9 +8,3 @@
     --icon-size-24: #{tools.px-to-rem(24px)};
     --icon-size-64: #{tools.px-to-rem(64px)};
 }
-
-//  --icon-size-xs: #{tools.px-to-rem(2px)};
-//     --icon-size-sm: #{tools.px-to-rem(14px)};
-//     --icon-size-base: #{tools.px-to-rem(22px)};
-//     --icon-size-md: #{tools.px-to-rem(24px)};
-//     --icon-size-lg: #{tools.px-to-rem(64px)};

@@ -53,9 +53,6 @@ body {
   --color-black: #242221;
   --color-red: #e00000;
   --color-blue: #1E24BD;
-}
-
-:root {
   --font-family-base: Arial;
   --font-size-38: 2.375rem;
   --font-size-28: 1.75rem;
@@ -65,9 +62,6 @@ body {
   --font-size-12: 0.75rem;
   --font-weight-normal: 400;
   --font-weight-bold: 700;
-}
-
-:root {
   --icon-size-2: 0.125rem;
   --icon-size-14: 0.875rem;
   --icon-size-22: 1.375rem;

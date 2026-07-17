@@ -1,0 +1,9 @@
+@use 'colors';
+@use 'fonts';
+@use 'icons';
+
+:root {
+    @include colors.colors;
+    @include fonts.fonts;
+    @include icons.icons;
+}

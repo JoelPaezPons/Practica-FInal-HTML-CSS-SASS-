@@ -1,6 +1,6 @@
 @use '../02-tools/functions' as tools;
 
-:root {
+@mixin fonts {
     --font-family-base: Arial;
 
 
