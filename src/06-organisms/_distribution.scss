@@ -38,7 +38,7 @@
 .distribution {
     display: grid;
     grid-template-columns: 1fr;
-    gap: #{tools.px-to-rem(32px)};
+    gap: #{tools.px-to-rem(40px)};
     padding-bottom: #{tools.px-to-rem(64px)};
 
     @media (min-width: tokens.$break-768){
