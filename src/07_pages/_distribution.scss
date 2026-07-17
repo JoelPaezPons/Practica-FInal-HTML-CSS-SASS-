@@ -1,0 +1,51 @@
+@use '../02-tools/functions' as tools;
+@use '../03-tokens/' as tokens;
+
+.page-layout {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    padding-inline: #{tools.px-to-rem(32px)};
+}
+
+.catalog-header {
+    display: flex;
+    flex-direction: column;
+    gap: #{tools.px-to-rem(24px)};
+    padding-top: #{tools.px-to-rem(48px)};
+    padding-bottom: #{tools.px-to-rem(32px)};
+    
+}
+
+.filters {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: #{tools.px-to-rem(16px)};
+
+    @media (min-width: tokens.$break-768) {
+        display: flex;
+    }
+}
+
+.distribution {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: #{tools.px-to-rem(40px)};
+    padding-bottom: #{tools.px-to-rem(64px)};
+
+    @media (min-width: tokens.$break-768){
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media (min-width: tokens.$break-1200){
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
