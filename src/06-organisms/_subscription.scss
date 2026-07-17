@@ -5,7 +5,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: #{tools.px-to-rem(24px)};
+    gap: #{tools.px-to-rem(32px)};
     padding: #{tools.px-to-rem(48px)};
 }
 
@@ -13,9 +13,19 @@
     display: flex;
     flex-direction: column;
     gap: #{tools.px-to-rem(8px)};
+    width: 100%;
 }
 
 .form__field {
     display: flex;
     gap: #{tools.px-to-rem(8px)};
+}
+
+.subscription__container {
+    width: 100%;
+    max-width: #{tools.px-to-rem(500px)};
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: #{tools.px-to-rem(24px)};
 }
