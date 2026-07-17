@@ -27,8 +27,8 @@
 }
 
 .header__user-icon {
-    width: var(--icon-size-md);
-    height: var(--icon-size-md);
+    width: var(--icon-size-24);
+    height: var(--icon-size-24);
 }
 
 
@@ -39,13 +39,12 @@
 }
 
 .header__menu-bar {
-    width: var(--icon-size-base);
-    height: var(--icon-size-xs);
+    width: var(--icon-size-22);
+    height: var(--icon-size-2);
     background-color: var(--color-black);
 }
 
-.header__cta,
-.header__user {
+.header__cta, .header__user {
     display: none;
 
     @media (min-width: tokens.$break-768) {
