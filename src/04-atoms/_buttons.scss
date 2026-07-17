@@ -12,6 +12,8 @@
     background-color: var(--color-black);
     color: var(--color-white);
     padding: #{tools.px-to-rem(14px)} #{tools.px-to-rem(16px)};
+    min-height: #{tools.px-to-rem(48px)};
+    border-radius: #{tools.px-to-rem(4px)};
 }
 
 
@@ -33,7 +35,8 @@
     background-color: var(--color-black);
     color: var(--color-white);
     font-size: var(--font-size-base);
-    padding: #{tools.px-to-rem(8px)};
+    padding: #{tools.px-to-rem(16px)};
     width: 100%;
+    border-radius: #{tools.px-to-rem(4px)};
 }
 
