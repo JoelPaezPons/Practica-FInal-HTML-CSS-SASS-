@@ -79,13 +79,13 @@ Los tamaños se llaman --font-size-38, --font-size-28, --font-size-24, --font-si
 Al principio los llamábamos con nombres tipo --font-size-xl, --font-size-lg, --font-size-sm... pero tuve que cambiar los nombres porque no eran intuitivos: para saber cuánto medía --font-size-lg había que ir a abrir el archivo y mirarlo. Con el número en el propio nombre, cualquiera que lea el código sabe el tamaño exacto sin necesidad de comprobar nada.
 
 
-###4️⃣ _icons.scss
+### 4️⃣ _icons.scss
 Definimos aquí una escala de tamaños pensada específicamente para iconos (--icon-size-2 hasta --icon-size-64, también nombrados por su valor real en píxeles, por el mismo motivo que los tamaños de fuente). La separamos de _fonts.scss porque, aunque técnicamente también son medidas, no son tipografía, y mezclarlas hacía más difícil encontrar cada cosa.
 
 El logo del header (.header__logo) es la única excepción: no usa ninguna variable de _icons.scss, sino px-to-rem(70px) directamente en _header.scss. Esto es porque el logo no es un icono cuadrado como el resto (mide 70×48px en el diseño, una proporción rectangular), y es el único elemento de la web con esa medida exacta — no tenía sentido crear una variable reutilizable para un valor que solo se usa una vez.
 
 
-###5️⃣ _root.scss
+### 5️⃣ _root.scss
 Este archivo junta los tres mixins anteriores (colors, fonts, icons) dentro de un único bloque :root:
 
 @use 'colors';
@@ -100,7 +100,7 @@ Este archivo junta los tres mixins anteriores (colors, fonts, icons) dentro de u
 
 Se creo porque, al principio, cada archivo de tokens tenía su propio :root { ... } por separado. Esto compilaba sin errores, pero generaba un style.css final con varios bloques :root repetidos, uno por archivo haciendo algo incesario. Convirtiendo cada archivo en un @mixin y uniéndolos aquí con @include, conseguimos que el CSS final tenga un único :root con todas las variables juntas.
 
-###6️⃣ _index.scss
+### 6️⃣ _index.scss
 Como en las carpetas anteriores, este archivo actúa como el punto de acceso central. Utiliza @forward para exponer los 5 archivos anteriores hacia el exterior, permitiendo que las demas carpetas puedan utilizar sus varibles con un único @use '../03-tokens/' as tokens.
 
 ## 📂 src/04-atoms/
@@ -167,8 +167,3 @@ Incluye .page-layout y .main-content (la estructura general de cualquier página
 .filters usa display: grid; grid-template-columns: repeat(3, 1fr); en vista móvil, en vez de display: flex; flex-wrap: wrap;. Se hizo así porque necesitábamos un resultado exacto (los 3 primeros filtros en la fila de arriba, y el cuarto Diesel siempre solo en la fila de abajo), y con flex-wrap el punto de corte depende del ancho real de cada botón y podía variar de forma menos controlada según el contenido. Con el grid de 3 columnas fijas, el 4º elemento pasa automáticamente a la siguiente fila sin necesitar ninguna clase adicional.
 
 .distribution sí cambia de columnas según el breakpoint (1 en móvil, 2 en tablet, 3 en ordenador), por si el numero de cards variara en un futuro y queremos que el grid se adapte solo, sin tener que forzar ninguna posición concreta.
-
-
-
-
-  
