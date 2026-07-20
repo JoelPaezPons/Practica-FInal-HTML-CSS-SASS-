@@ -80,14 +80,14 @@ Al principio los llamábamos con nombres tipo --font-size-xl, --font-size-lg, --
 
 
 ###4️⃣ _icons.scss
-
+---
 Definimos aquí una escala de tamaños pensada específicamente para iconos (--icon-size-2 hasta --icon-size-64, también nombrados por su valor real en píxeles, por el mismo motivo que los tamaños de fuente). La separamos de _fonts.scss porque, aunque técnicamente también son medidas, no son tipografía, y mezclarlas hacía más difícil encontrar cada cosa.
 
 El logo del header (.header__logo) es la única excepción: no usa ninguna variable de _icons.scss, sino px-to-rem(70px) directamente en _header.scss. Esto es porque el logo no es un icono cuadrado como el resto (mide 70×48px en el diseño, una proporción rectangular), y es el único elemento de la web con esa medida exacta — no tenía sentido crear una variable reutilizable para un valor que solo se usa una vez.
 
 
-5️⃣ _root.scss
-
+###5️⃣ _root.scss
+---
 Este archivo junta los tres mixins anteriores (colors, fonts, icons) dentro de un único bloque :root:
 
 @use 'colors';
@@ -103,6 +103,7 @@ Este archivo junta los tres mixins anteriores (colors, fonts, icons) dentro de u
 Se creo porque, al principio, cada archivo de tokens tenía su propio :root { ... } por separado. Esto compilaba sin errores, pero generaba un style.css final con varios bloques :root repetidos, uno por archivo haciendo algo incesario. Convirtiendo cada archivo en un @mixin y uniéndolos aquí con @include, conseguimos que el CSS final tenga un único :root con todas las variables juntas.
 
 ###6️⃣ _index.scss
+---
 Como en las carpetas anteriores, este archivo actúa como el punto de acceso central. Utiliza @forward para exponer los 5 archivos anteriores hacia el exterior, permitiendo que las demas carpetas puedan utilizar sus varibles con un único @use '../03-tokens/' as tokens.
 
 ## 📂 src/04-atoms/
