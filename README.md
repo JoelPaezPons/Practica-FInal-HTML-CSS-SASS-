@@ -129,6 +129,7 @@ Los atoms son los componentes más pequeños y genéricos del proyecto: no depen
 `_titles.scss`
 .title: Peso de fuente (negrita) y line-height base, compartidos por todos los títulos del proyecto que necesitan verse en negrita. Se combina con una clase de tamaño (.title-page, .title-page-subtitle, .title-card) para dar el tamaño concreto según dónde se use. El <h2> con el nombre de cada moto dentro de la card (.title-card) usa un peso de letra normal, sin la clase .title, ya que en el diseño ese texto en concreto no lleva negrita.
 
+
 ## 📂 src/05-molecules/
 ---
 Las molecules combinan varios atoms para formar un componente con sentido propio, pero que se sigue repitiendo/reutilizando.
