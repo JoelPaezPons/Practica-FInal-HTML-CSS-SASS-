@@ -6,7 +6,8 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: #{tools.px-to-rem(16px)};
+    padding-block: #{tools.px-to-rem(16px)};
+    padding-inline: #{tools.px-to-rem(32px)};
     background-color: var(--color-low-grey);
 }
 

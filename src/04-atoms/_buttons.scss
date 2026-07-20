@@ -1,5 +1,4 @@
 @use '../02-tools/functions' as tools;
-@use '../03-tokens/' as tokens;
 
 .btn {
     display: inline-flex;
@@ -21,7 +20,7 @@
     background-color: var(--color-white);
     color: var(--color-black);
     padding: #{tools.px-to-rem(8px)} #{tools.px-to-rem(16px)};
-    font-size: var(--font-size-sm);
+    font-size: var(--font-size-14);
     border: 1px solid var(--color-black);
     border-radius: #{tools.px-to-rem(4px)};
 }
@@ -34,7 +33,7 @@
 .btn-configuration {
     background-color: var(--color-black);
     color: var(--color-white);
-    font-size: var(--font-size-base);
+    font-size: var(--font-size-16);
     padding: #{tools.px-to-rem(16px)};
     width: 100%;
     border-radius: #{tools.px-to-rem(4px)};
