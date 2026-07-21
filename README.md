@@ -137,7 +137,7 @@ Las molecules combinan varios atoms para formar un componente con sentido propio
 `_card.scss`
 La tarjeta de producto completa: imagen, cuerpo en columna con flexbox, fila de tags, fila de precio + enlace "Ver detalles" (con justify-content: space-between para separarlos a los extremos), y el icono de descuento alineado con el texto mediante display: flex; align-items: center;.
 
-El texto "(con IVA)" está envuelto en un `<span class="card-price-vat">` aparte, con un font-size distinto (14px) al del precio principal (16px). Usamos <span> porque es la única etiqueta HTML pensada exactamente para este caso: aplicar un estilo distinto a una porción de texto sin significado semántico especial y sin romper el flujo en línea de la frase a diferencia de un <div> o un <p>, que son elementos de bloque y forzarían un salto de línea.
+El texto "(con IVA)" está envuelto en un `<span class="card-price-vat">` aparte, con un font-size distinto (14px) al del precio principal (16px). Usamos <span> porque es la única etiqueta HTML pensada exactamente para este caso: aplicar un estilo distinto a una porción de texto sin significado semántico especial y sin romper el flujo en línea de la frase a diferencia de un `div` o un `p`, que son elementos de bloque y forzarían un salto de línea.
 
 .card no lleva padding en ningún punto. Aunque en un primer momento pensamos que hacía falta para separar el contenido del borde de la tarjeta, decidimos mantenerlo así porque, con la card completa (imagen + cuerpo de texto) todos sus elementos internos ya quedan alineados de forma simétrica gracias al propio padding de .main-content y al gap entre cards del grid.
 
