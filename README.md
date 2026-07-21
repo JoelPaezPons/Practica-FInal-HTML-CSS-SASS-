@@ -139,7 +139,7 @@ La tarjeta de producto completa: imagen, cuerpo en columna con flexbox, fila de 
 
 El texto "(con IVA)" está envuelto en un `<span class="card-price-vat">` aparte, con un font-size distinto (14px) al del precio principal (16px). Usamos <span> porque es la única etiqueta HTML pensada exactamente para este caso: aplicar un estilo distinto a una porción de texto sin significado semántico especial y sin romper el flujo en línea de la frase a diferencia de un `div` o un `p`, que son elementos de bloque y forzarían un salto de línea.
 
-.card no lleva padding en ningún punto. Aunque en un primer momento pensamos que hacía falta para separar el contenido del borde de la tarjeta, decidimos mantenerlo así porque, con la card completa (imagen + cuerpo de texto) todos sus elementos internos ya quedan alineados de forma simétrica gracias al propio padding de .main-content y al gap entre cards del grid.
+.card no lleva padding en ningún punto. Aunque al principio si que llevaba para separar el contenido del borde de la tarjeta, se decidio mantenerlo así porque, no era una buena practica utilizar gap y padding en un mismo lugar, aparte con la card completa (imagen + texto)  ya quedaban alineados de forma simétrica gracias al propio padding de .main-content y al gap entre cards del grid.
 
 
 ## 📂 src/06-organisms/
